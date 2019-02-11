@@ -1,46 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <EditText
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
         android:id="@+id/date1"
-        android:inputType="date"/>
+        android:inputType="date"
+        />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/payto"/>
+        android:id="@+id/payto"
+        android:layout_below="@+id/date1"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/words"/>
+        android:id="@+id/words"
+        android:layout_below="@+id/payto"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/nums" />
+        android:id="@+id/nums"
+        android:layout_below="@+id/words"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/accno"/>
+        android:id="@+id/accno"
+        android:layout_below="@+id/nums"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cheqno"/>
+        android:id="@+id/cheqno"
+        android:layout_below="@+id/accno"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/micr"/>
+        android:id="@+id/micr"
+        android:layout_below="@+id/cheqno"/>
+
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/brno"/>
+        android:id="@+id/brno"
+        android:layout_below="@+id/micr"/>
+
     <EditText
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brno"/>
+
+    <Button
+        android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/two"/>
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@+id/two"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
